@@ -1,51 +1,107 @@
-🍕 Pizza Hut Sales Analysis (SQL Project)
+# 🍕 Pizza Hut Sales Analysis (SQL Project)
 
-📊 Project Overview
-This project performs a comprehensive analysis of Pizza Hut's sales data to derive actionable business insights. The primary goal was to answer key business questions regarding revenue trends, customer ordering patterns, and product performance using MySQL.
+A complete SQL-based data analysis project on Pizza Hut sales data to extract meaningful business insights using MySQL.
 
-🛠️ Tech Stack & SQL Skills
-* Tool: MySQL Workbench
+This project answers real-world business questions related to revenue, customer ordering behavior, product performance, and sales trends.
 
-* Database Concepts: Relational Database Management
+---
 
-* SQL Techniques Used:
+## 📊 Project Overview
 
-* Joins: Connecting multiple tables (Orders, Pizzas, Pizza_Types, etc.) to fetch related data.
+The goal of this project is to analyze Pizza Hut’s sales database and derive actionable insights that can help in:
 
-* Aggregations: Using SUM, COUNT, AVG, and ROUND for financial calculations.
+- Understanding revenue patterns
+- Identifying best-selling pizzas
+- Finding peak order hours
+- Analyzing category-wise performance
+- Tracking cumulative business growth
 
-* Window Functions: Implementing RANK() and SUM() OVER() for cumulative revenue and category-    wise rankings.
+All analysis is performed using pure SQL queries in MySQL Workbench.
 
-* Subqueries & CTEs: Breaking down complex logic into readable steps.
+---
 
-📈 Key Business Questions Solved
-The analysis is divided into three levels:
+## 🛠️ Tech Stack & SQL Skills Used
 
-1. Basic Insights
-* Calculated the Total Number of Orders and Total Revenue generated.
+**Tool:** MySQL Workbench  
+**Concepts:** Relational Database Management System (RDBMS)
 
-* Identified the Highest-Priced Pizza and the most common Pizza Size ordered.
+### SQL Techniques Applied
 
-2. Intermediate Analysis
-* Analyzed the Hourly Distribution of orders to find peak business hours.
+- Joins (multiple tables connected)
+- Aggregations: `SUM`, `COUNT`, `AVG`, `ROUND`
+- Window Functions: `RANK()`, `SUM() OVER()`
+- Subqueries and CTEs
+- Grouping and Sorting
+- Business-focused query writing
 
-* Found the Category-wise Distribution of pizzas (Classic, Veggie, Supreme, etc.).
+---
 
-* Calculated the Average Pizzas Ordered Per Day.
+## 📈 Business Questions Solved
 
-3. Advanced Insights
-* Identified the Top 3 Pizza Types based on revenue for each category.
+### ✅ Basic Insights
 
-* Calculated Cumulative Revenue over time to track business growth.
+- Total number of orders placed
+- Total revenue generated
+- Highest priced pizza
+- Most commonly ordered pizza size
 
-* Determined the Percentage Contribution of each pizza category to the total revenue.
+### ✅ Intermediate Analysis
 
-📂 Project Structure
-* Dataset/: Contains the 4 CSV/SQL files used to build the database.
+- Hourly distribution of orders (peak hours)
+- Category-wise pizza distribution
+- Average pizzas ordered per day
 
-* pizza_analysis_queries.sql: The complete SQL script containing all 13 analyzed queries with    comments.
+### ✅ Advanced Insights
 
-* README.md: Project documentation (this file).
+- Top 3 pizza types by revenue in each category
+- Cumulative revenue over time
+- Percentage revenue contribution by each category
 
-🚀 Conclusion
-This analysis helps the business understand which pizzas are driving the most revenue and at what time the shop is busiest, allowing for better inventory management and targeted marketing strategies.
+---
+
+## 📂 Project Structure
+
+```
+Pizza-Hut-Sales-Analysis/
+│
+├── Dataset/
+│   ├── orders.csv
+│   ├── order_details.csv
+│   ├── pizzas.csv
+│   └── pizza_types.csv
+│
+├── Queries/
+│   └── pizza_analysis_queries.sql
+│
+└── README.md
+```
+
+---
+
+## 🚀 How to Run This Project
+
+1. Import the CSV files into MySQL to create tables
+2. Run the queries from `pizza_analysis_queries.sql`
+3. Analyze the outputs to understand business insights
+
+---
+
+## 🎯 Key Learnings
+
+- Writing business-driven SQL queries
+- Handling multi-table joins efficiently
+- Using window functions for advanced analysis
+- Translating raw data into business insights
+- Structuring SQL projects professionally for GitHub
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how SQL can be used not just for querying data but for solving real business problems and generating insights that help in decision-making, inventory planning, and marketing strategies.
+
+---
+
+## 👨‍💻 Author
+
+**Rohan Karhad**
